@@ -19,7 +19,7 @@ export const CompaniesView = ({ status, companies, error }: CompaniesViewProps) 
         </p>
       )}
 
-      {status === 'loaded' && companies && (
+      {status === 'loaded' && companies && companies.length > 0 && (
         <div className='overflow-x-auto'>
           <table className='min-w-full bg-white border border-gray-300'>
             <thead>
