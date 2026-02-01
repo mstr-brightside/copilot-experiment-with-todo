@@ -10,6 +10,12 @@ export default function App() {
         <Link to='/about' className='underline'>
           About
         </Link>
+        <Link to='/companies' className='underline'>
+          Companies
+        </Link>
+        <Link to='/companies/add' className='underline'>
+          Add Company
+        </Link>
       </nav>
       <Outlet />
     </div>
