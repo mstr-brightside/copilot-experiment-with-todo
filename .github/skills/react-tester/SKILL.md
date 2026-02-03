@@ -27,3 +27,4 @@ describe('MyComponent', () => {
     expect(screen.getByRole('heading')).toBeInTheDocument();
   });
 });
+```
