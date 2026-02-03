@@ -26,9 +26,15 @@ export const CompaniesView = ({ status, companies, error }: CompaniesViewProps) 
               <tr className='bg-gray-700'>
                 <th className='py-2 px-4 border-b border-gray-600 text-left text-gray-100'>Name</th>
                 <th className='py-2 px-4 border-b border-gray-600 text-left text-gray-100'>ITIN</th>
-                <th className='py-2 px-4 border-b border-gray-600 text-left text-gray-100'>Phone</th>
-                <th className='py-2 px-4 border-b border-gray-600 text-left text-gray-100'>Country</th>
-                <th className='py-2 px-4 border-b border-gray-600 text-left text-gray-100'>Email</th>
+                <th className='py-2 px-4 border-b border-gray-600 text-left text-gray-100'>
+                  Phone
+                </th>
+                <th className='py-2 px-4 border-b border-gray-600 text-left text-gray-100'>
+                  Country
+                </th>
+                <th className='py-2 px-4 border-b border-gray-600 text-left text-gray-100'>
+                  Email
+                </th>
               </tr>
             </thead>
             <tbody>
@@ -46,7 +52,9 @@ export const CompaniesView = ({ status, companies, error }: CompaniesViewProps) 
         </div>
       )}
 
-      {status === 'loaded' && (!companies || companies.length === 0) && <p className='text-gray-300'>No companies found.</p>}
+      {status === 'loaded' && (!companies || companies.length === 0) && (
+        <p className='text-gray-300'>No companies found.</p>
+      )}
     </div>
   );
 };
