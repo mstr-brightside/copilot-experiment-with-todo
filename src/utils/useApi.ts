@@ -1,8 +1,6 @@
 import axios, { AxiosError, AxiosRequestConfig, AxiosResponse } from 'axios';
 import { useReducer, useRef, useCallback, useEffect } from 'react';
 
-// --- Types ---
-
 type Status = 'not_requested' | 'loading' | 'loaded' | 'error';
 
 interface State<T> {
